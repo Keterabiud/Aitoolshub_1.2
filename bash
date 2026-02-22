@@ -1,3 +1,14 @@
+# Create new Vite + React + TypeScript project
+npm create vite@latest aitoolshub -- --template react-ts
+
+# Enter the project
+cd aitoolshub
+
+# Install dependencies
 npm install
-npm run build
-vercel --prod
+
+# Install required packages
+npm install lucide-react tailwindcss postcss autoprefixer
+
+# Initialize Tailwind
+npx tailwindcss init -p
