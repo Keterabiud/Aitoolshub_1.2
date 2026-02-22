@@ -4,7 +4,7 @@ import path from 'path'
 
 export default defineConfig({
   plugins: [react()],
-  base: '/',
+  base: '/', // ← CRITICAL: Must be '/' for Vercel root domains
   resolve: {
     alias: {
       '@': path.resolve(__dirname, './src'),
@@ -13,5 +13,6 @@ export default defineConfig({
   build: {
     outDir: 'dist',
     emptyOutDir: true,
+    sourcemap: true, // Helps debug
   },
 })
