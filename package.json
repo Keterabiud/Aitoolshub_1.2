@@ -1,0 +1,12 @@
+{
+  "name": "aitoolshub",
+  "private": true,
+  "version": "1.0.0",
+  "type": "module",
+  // ❌ REMOVE THIS LINE IF IT EXISTS: "homepage": "..."
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc -b && vite build",
+    "preview": "vite preview"
+  }
+}
